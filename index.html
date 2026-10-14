@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier IT — Support informatique pour PME</title>
+  <meta name="description" content="Support informatique niveau 1 et niveau 2 pour les PME. Abonnement mensuel de 250 €, résolution en moins de 4 heures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7h15a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="M3 7V6a2 2 0 0 1 2-2h11v3"/><path d="M16 13.5h1"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5"/></symbol>
+      <symbol id="i-remote" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-unlock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></symbol>
+      <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m3 11 4-4 4 2 3-2 7 4"/><path d="M3 11v4l6 5 2-1 2 1 6-5v-4"/><path d="m9 13 2 2M12 12l3 3"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/><path d="M19 19c0 1.5-1.5 2-4 2h-2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M7 14h10v7H7z"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 19h16"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5Z"/><path d="M4 19a2 2 0 0 1 2-2h13"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/><path d="M8 6.5h.01M8 17.5h.01"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13"/><path d="M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="10" rx="1"/><path d="M2.5 19h19l-2-4h-15l-2 4Z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo"><span class="logo-mark" aria-hidden="true">A</span>Atelier IT</a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <div class="nav-dropdown">
+          <a href="#services" class="nav-item">Services <svg class="nav-chevron"><use href="#i-chevron"/></svg></a>
+          <div class="mega-menu">
+            <a href="#niveau-1" class="mega-item-link">
+              <svg><use href="#i-headset"/></svg>
+              <span><strong>Niveau 1</strong>Assistance utilisateurs</span>
+            </a>
+            <a href="#niveau-2" class="mega-item-link">
+              <svg><use href="#i-server"/></svg>
+              <span><strong>Niveau 2</strong>Support technique</span>
+            </a>
+          </div>
+        </div>
+        <a href="#offre" class="nav-item">Offre</a>
+        <a href="#fonctionnement" class="nav-item">Fonctionnement</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <a href="#contact" class="button header-button">Demander un devis</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <p class="hero-typed" aria-hidden="true"><span id="typed">Votre support informatique, réglé en moins de 4 heures</span><span class="typed-cursor">|</span></p>
+          <h1 class="sr-only">Support informatique niveau 1 et niveau 2 pour PME</h1>
+          <p class="hero-text reveal">
+            Atelier IT prend en charge le support informatique de niveau 1 et de niveau 2 des PME.
+            Un abonnement mensuel fixe, une résolution des incidents en moins de 4&nbsp;heures,
+            et un technicien qui se déplace quand c'est nécessaire.
+          </p>
+          <a href="#offre" class="button button-large reveal">Découvrir l'offre</a>
+        </div>
+      </div>
+
+      <svg class="hero-illustration" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <g class="city-back">
+          <rect x="40" y="170" width="90" height="190"/><rect x="150" y="120" width="70" height="240"/>
+          <rect x="300" y="150" width="110" height="210"/><rect x="520" y="90" width="80" height="270"/>
+          <rect x="700" y="140" width="120" height="220"/><rect x="930" y="100" width="70" height="260"/>
+          <rect x="1080" y="160" width="100" height="200"/><rect x="1260" y="110" width="80" height="250"/>
+          <rect x="1360" y="180" width="70" height="180"/>
+        </g>
+        <g class="city-front">
+          <rect x="0" y="230" width="120" height="130"/><rect x="200" y="200" width="100" height="160"/>
+          <rect x="400" y="240" width="140" height="120"/><rect x="600" y="180" width="110" height="180"/>
+          <rect x="800" y="220" width="150" height="140"/><rect x="1000" y="190" width="90" height="170"/>
+          <rect x="1170" y="230" width="130" height="130"/><rect x="1340" y="210" width="100" height="150"/>
+        </g>
+        <g class="city-windows">
+          <rect x="220" y="220" width="14" height="10"/><rect x="250" y="250" width="14" height="10"/>
+          <rect x="620" y="200" width="14" height="10"/><rect x="660" y="240" width="14" height="10"/><rect x="620" y="280" width="14" height="10"/>
+          <rect x="830" y="245" width="14" height="10"/><rect x="890" y="275" width="14" height="10"/>
+          <rect x="1020" y="215" width="14" height="10"/><rect x="1050" y="255" width="14" height="10"/>
+          <rect x="1200" y="255" width="14" height="10"/><rect x="1360" y="235" width="14" height="10"/>
+          <rect x="20" y="255" width="14" height="10"/><rect x="430" y="265" width="14" height="10"/>
+        </g>
+        <g class="city-windows-orange">
+          <rect x="250" y="220" width="14" height="10"/><rect x="660" y="200" width="14" height="10"/>
+          <rect x="860" y="245" width="14" height="10"/><rect x="1230" y="285" width="14" height="10"/>
+          <rect x="60" y="285" width="14" height="10"/><rect x="1020" y="295" width="14" height="10"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Budget maîtrisé</h3>
+            <svg class="feature-icon"><use href="#i-wallet"/></svg>
+            <div class="feature-overlay"><p>Un forfait mensuel fixe à la place d'un recrutement. Vous savez à l'avance ce que coûte votre informatique.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Résolution en moins de 4&nbsp;h</h3>
+            <svg class="feature-icon"><use href="#i-clock"/></svg>
+            <div class="feature-overlay"><p>Chaque incident signalé est résolu en moins de 4&nbsp;heures ouvrées. Vos équipes ne restent pas bloquées.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Un interlocuteur unique</h3>
+            <svg class="feature-icon"><use href="#i-user"/></svg>
+            <div class="feature-overlay"><p>Un seul contact qui connaît votre parc, vos logiciels et vos habitudes. Pas besoin de tout réexpliquer.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">À distance ou sur site</h3>
+            <svg class="feature-icon"><use href="#i-remote"/></svg>
+            <div class="feature-overlay"><p>La plupart des problèmes se règlent à distance. Sinon, un technicien se déplace pour 60&nbsp;€.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Niveau 1 et niveau 2</h3>
+            <svg class="feature-icon"><use href="#i-headset"/></svg>
+            <div class="feature-overlay"><p>Des demandes simples de vos utilisateurs aux pannes techniques&nbsp;: tout est couvert par le même abonnement.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Sécurité</h3>
+            <svg class="feature-icon"><use href="#i-shield"/></svg>
+            <div class="feature-overlay"><p>Postes à jour, sauvegardes vérifiées, comportements suspects traités. Votre activité est protégée.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Transparence</h3>
+            <svg class="feature-icon"><use href="#i-doc"/></svg>
+            <div class="feature-overlay"><p>Chaque intervention est expliquée. Aucun frais n'est engagé sans votre accord préalable.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Sans engagement long</h3>
+            <svg class="feature-icon"><use href="#i-unlock"/></svg>
+            <div class="feature-overlay"><p>Vous restez parce que le service vous convient, pas parce qu'un contrat de plusieurs années vous y oblige.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Suivi de chaque demande</h3>
+            <svg class="feature-icon"><use href="#i-list"/></svg>
+            <div class="feature-overlay"><p>Chaque demande est enregistrée et suivie jusqu'à sa résolution. Rien ne se perd.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <h3 class="feature-title">Vous gérez, nous assurons</h3>
+            <svg class="feature-icon"><use href="#i-handshake"/></svg>
+            <div class="feature-overlay"><p>Concentrez-vous sur votre métier. Votre informatique est entre de bonnes mains.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-intro">
+      <div class="container section-heading reveal">
+        <h2 class="heading-36">Découvrez tous nos services</h2>
+        <p>Deux niveaux de support, inclus dans un seul abonnement.</p>
+      </div>
+    </section>
+
+    <section id="niveau-1" class="service-section service-orange">
+      <div class="container">
+        <div class="service-wrapper">
+          <div class="service-text reveal">
+            <h2 class="heading-36 medium">Niveau 1 — Assistance utilisateurs</h2>
+            <p>Les demandes courantes de vos collaborateurs, traitées rapidement et le plus souvent à distance, pour que personne ne reste bloqué.</p>
+            <a href="#contact" class="explore-link">Demander un devis <svg><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="service-list">
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-headset"/></svg>
+              <p class="service-name">Helpdesk</p>
+              <div class="service-hover"><p>Un point de contact par téléphone et e-mail pour toutes les demandes de vos équipes.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-user"/></svg>
+              <p class="service-name">Comptes et accès</p>
+              <div class="service-hover"><p>Création de comptes, mots de passe oubliés, droits d'accès aux dossiers partagés.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-mail"/></svg>
+              <p class="service-name">Messagerie et bureautique</p>
+              <div class="service-hover"><p>Outlook, Microsoft 365, Google Workspace&nbsp;: configuration et résolution des blocages.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-printer"/></svg>
+              <p class="service-name">Imprimantes et périphériques</p>
+              <div class="service-hover"><p>Imprimantes, scanners, écrans, stations d'accueil&nbsp;: installation et dépannage.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-download"/></svg>
+              <p class="service-name">Installation de logiciels</p>
+              <div class="service-hover"><p>Installation, mise à jour et paramétrage des logiciels métiers et bureautiques.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-book"/></svg>
+              <p class="service-name">Accompagnement</p>
+              <div class="service-hover"><p>Conseils d'utilisation et prise en main des outils pour vos collaborateurs.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="niveau-2" class="service-section service-cyan">
+      <div class="container">
+        <div class="service-wrapper">
+          <div class="service-text reveal">
+            <h2 class="heading-36 medium">Niveau 2 — Support technique</h2>
+            <p>Les incidents qui demandent un diagnostic approfondi sur vos postes, votre réseau ou vos serveurs, réglés par un technicien expérimenté.</p>
+            <a href="#contact" class="explore-link">Demander un devis <svg><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="service-list">
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-search"/></svg>
+              <p class="service-name">Diagnostic et dépannage</p>
+              <div class="service-hover"><p>Pannes matérielles, lenteurs, plantages&nbsp;: identification de la cause et réparation.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-network"/></svg>
+              <p class="service-name">Réseau et internet</p>
+              <div class="service-hover"><p>Box, Wi-Fi, switchs, VPN&nbsp;: rétablissement de la connexion et du réseau local.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-server"/></svg>
+              <p class="service-name">Serveurs et partages</p>
+              <div class="service-hover"><p>Serveurs de fichiers, NAS et droits d'accès&nbsp;: maintenance et remise en service.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-database"/></svg>
+              <p class="service-name">Sauvegardes et données</p>
+              <div class="service-hover"><p>Vérification des sauvegardes et récupération de données en cas de perte.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-shield"/></svg>
+              <p class="service-name">Sécurité</p>
+              <div class="service-hover"><p>Virus, e-mails suspects, comptes compromis&nbsp;: analyse et remise en sécurité.</p></div>
+            </div>
+            <div class="service-item reveal">
+              <svg class="service-icon"><use href="#i-laptop"/></svg>
+              <p class="service-name">Nouveaux postes</p>
+              <div class="service-hover"><p>Préparation et configuration des ordinateurs pour vos nouveaux arrivants.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 class="heading-36">Concentrez-vous sur votre métier, on s'occupe du reste</h2>
+        </div>
+        <div class="numbers-grid">
+          <div class="number-item reveal">
+            <div class="number-top">
+              <svg class="number-icon"><use href="#i-wallet"/></svg>
+              <p class="number-value">250&nbsp;€</p>
+            </div>
+            <p class="number-text">Par mois, hors taxes, pour tout le support</p>
+          </div>
+          <div class="number-item reveal">
+            <div class="number-top">
+              <svg class="number-icon"><use href="#i-clock"/></svg>
+              <p class="number-value">&lt;&nbsp;4&nbsp;h</p>
+            </div>
+            <p class="number-text">Pour résoudre chaque incident signalé</p>
+          </div>
+          <div class="number-item reveal">
+            <div class="number-top">
+              <svg class="number-icon"><use href="#i-headset"/></svg>
+              <p class="number-value">N1 + N2</p>
+            </div>
+            <p class="number-text">Deux niveaux de support inclus</p>
+          </div>
+          <div class="number-item reveal">
+            <div class="number-top">
+              <svg class="number-icon"><use href="#i-pin"/></svg>
+              <p class="number-value">60&nbsp;€</p>
+            </div>
+            <p class="number-text">Le déplacement, uniquement si nécessaire</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offre" class="pricing-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 class="heading-36">Un tarif clair, sans surprise</h2>
+          <p>Un forfait mensuel qui couvre l'assistance de votre entreprise. Le seul supplément possible est le déplacement, uniquement lorsqu'il est indispensable.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="plan plan-main reveal">
+            <p class="plan-label">Abonnement</p>
+            <h3 class="plan-title">Support informatique</h3>
+            <p class="price"><span class="price-amount">250&nbsp;€</span><span class="price-unit">HT / mois</span></p>
+            <ul class="check-list">
+              <li>Support de niveau 1 et de niveau 2</li>
+              <li>Résolution des incidents en moins de 4&nbsp;heures</li>
+              <li>Intervention à distance incluse</li>
+              <li>Un interlocuteur qui connaît votre parc</li>
+              <li>Sans engagement de longue durée</li>
+            </ul>
+            <a href="#contact" class="button button-block">Demander un devis</a>
+          </div>
+
+          <div class="plan reveal">
+            <p class="plan-label">Option</p>
+            <h3 class="plan-title">Déplacement sur site</h3>
+            <p class="price"><span class="price-amount">+60&nbsp;€</span><span class="price-unit">HT / intervention</span></p>
+            <p class="plan-text">
+              Lorsqu'une intervention physique est nécessaire — matériel à remplacer,
+              câblage, installation — un technicien se déplace dans vos locaux.
+            </p>
+            <p class="plan-note">Facturé uniquement si le déplacement est nécessaire, et toujours annoncé avant l'intervention.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fonctionnement" class="process">
+      <div class="container">
+        <div class="process-wrapper">
+          <div class="process-text reveal">
+            <h2 class="heading-36">Comment ça se passe</h2>
+            <p>De votre appel à la résolution, un parcours simple et suivi à chaque étape.</p>
+          </div>
+          <ol class="process-list">
+            <li class="process-item reveal">
+              <span class="process-number">01</span>
+              <div>
+                <h3>Vous signalez le problème</h3>
+                <p>Par téléphone ou par e-mail. Vous décrivez ce qui ne fonctionne pas, avec vos mots.</p>
+              </div>
+            </li>
+            <li class="process-item process-item-active reveal">
+              <span class="process-number">02</span>
+              <div>
+                <h3>Nous prenons la main</h3>
+                <p>Un technicien qualifie la demande et intervient à distance dans la foulée.</p>
+              </div>
+            </li>
+            <li class="process-item reveal">
+              <span class="process-number">03</span>
+              <div>
+                <h3>Déplacement si besoin</h3>
+                <p>Si le problème ne peut pas être réglé à distance, nous venons sur place.</p>
+              </div>
+            </li>
+            <li class="process-item reveal">
+              <span class="process-number">04</span>
+              <div>
+                <h3>Problème résolu</h3>
+                <p>En moins de 4&nbsp;heures. Nous vous expliquons ce qui s'est passé et comment l'éviter.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 class="heading-36">Questions fréquentes</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>À qui s'adresse l'offre&nbsp;?</summary>
+            <p>Aux PME, TPE, commerces, cabinets et associations qui n'ont pas de service informatique interne, ou qui veulent le décharger du support quotidien.</p>
+          </details>
+          <details>
+            <summary>Quelle est la différence entre niveau 1 et niveau 2&nbsp;?</summary>
+            <p>Le niveau 1 couvre l'assistance aux utilisateurs&nbsp;: accès, messagerie, logiciels, imprimantes. Le niveau 2 traite les incidents plus techniques qui demandent un diagnostic&nbsp;: réseau, serveurs, sauvegardes, pannes matérielles.</p>
+          </details>
+          <details>
+            <summary>Que signifie «&nbsp;résolution en moins de 4&nbsp;heures&nbsp;»&nbsp;?</summary>
+            <p>À partir du moment où vous nous signalez un incident, nous nous engageons à le résoudre dans un délai de 4&nbsp;heures, aux heures ouvrées.</p>
+          </details>
+          <details>
+            <summary>Quand le déplacement est-il facturé&nbsp;?</summary>
+            <p>Uniquement lorsqu'une intervention sur place est indispensable. Nous vous prévenons toujours avant de nous déplacer.</p>
+          </details>
+          <details>
+            <summary>Le matériel est-il inclus&nbsp;?</summary>
+            <p>Non. L'abonnement couvre le temps d'intervention et le support. Si une pièce ou un équipement doit être remplacé, nous vous conseillons et vous transmettons un devis.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 class="heading-36">Contactez-nous</h2>
+          <p>Dites-nous combien de postes vous avez et ce qui vous pose problème. Nous vous répondons sous 24&nbsp;heures ouvrées.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <div class="contact-group">
+              <p class="contact-heading">Appelez-nous</p>
+              <a href="tel:+33100000000" class="contact-link"><svg><use href="#i-phone"/></svg>01 00 00 00 00</a>
+              <p class="contact-sub">Du lundi au vendredi, de 9&nbsp;h à 18&nbsp;h</p>
+            </div>
+            <div class="contact-group">
+              <p class="contact-heading">Écrivez-nous</p>
+              <a href="mailto:contact@atelier-it.fr" class="contact-link"><svg><use href="#i-mail"/></svg>contact@atelier-it.fr</a>
+            </div>
+            <div class="contact-group">
+              <p class="contact-heading">Zone d'intervention</p>
+              <p class="contact-link"><svg><use href="#i-pin"/></svg>À distance partout, sur site dans votre région</p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <label class="group-input">
+                <span>Nom *</span>
+                <input type="text" name="nom" required autocomplete="name" placeholder="Votre nom">
+              </label>
+              <label class="group-input">
+                <span>Entreprise</span>
+                <input type="text" name="entreprise" autocomplete="organization" placeholder="Nom de l'entreprise">
+              </label>
+            </div>
+            <div class="form-row">
+              <label class="group-input">
+                <span>E-mail *</span>
+                <input type="email" name="email" required autocomplete="email" placeholder="vous@entreprise.fr">
+              </label>
+              <label class="group-input">
+                <span>Téléphone</span>
+                <input type="tel" name="telephone" autocomplete="tel" placeholder="01 23 45 67 89">
+              </label>
+            </div>
+            <label class="group-input">
+              <span>Nombre de postes</span>
+              <select name="postes">
+                <option>1 à 5</option>
+                <option>6 à 15</option>
+                <option>16 à 30</option>
+                <option>Plus de 30</option>
+              </select>
+            </label>
+            <label class="group-input">
+              <span>Message *</span>
+              <textarea name="message" rows="5" required placeholder="Décrivez votre besoin"></textarea>
+            </label>
+            <button type="submit" class="button">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-col footer-brand">
+          <a href="#" class="logo"><span class="logo-mark" aria-hidden="true">A</span>Atelier IT</a>
+          <p>Support informatique niveau 1 et niveau 2 pour les PME.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Services</p>
+          <a href="#niveau-1">Assistance utilisateurs</a>
+          <a href="#niveau-2">Support technique</a>
+          <a href="#offre">Offre et tarifs</a>
+          <a href="#faq">Questions fréquentes</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Contact</p>
+          <a href="tel:+33100000000">01 00 00 00 00</a>
+          <a href="mailto:contact@atelier-it.fr">contact@atelier-it.fr</a>
+          <p>Lundi – vendredi, 9&nbsp;h – 18&nbsp;h</p>
+        </div>
+        <div class="footer-col footer-cta">
+          <a href="#contact" class="button">Demander un devis</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Atelier IT. Tous droits réservés.</p>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
